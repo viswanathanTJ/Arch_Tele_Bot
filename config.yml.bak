@@ -1,0 +1,8 @@
+telegram:
+  token: 
+  whitelist_users:
+    lord0x1: <id> 
+  notify_ids: 
+    - <id>
+  admin_id:
+    - <id>
