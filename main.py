@@ -17,6 +17,9 @@ import logging
 import logging.config
 import time
 
+# Run from the script's directory so relative paths (logger.conf, logs.log) resolve
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
 logging.config.fileConfig(fname='logger.conf', disable_existing_loggers=False)
 logger = logging.getLogger(__name__)
 
